@@ -1,0 +1,352 @@
+D:\DACS\ShoesOnline\bin\ShoesOnline.dll.config
+D:\DACS\ShoesOnline\bin\ShoesOnline.dll
+D:\DACS\ShoesOnline\bin\ShoesOnline.pdb
+D:\DACS\ShoesOnline\bin\roslyn\csc.exe
+D:\DACS\ShoesOnline\bin\roslyn\csc.exe.config
+D:\DACS\ShoesOnline\bin\roslyn\csc.rsp
+D:\DACS\ShoesOnline\bin\roslyn\csi.exe
+D:\DACS\ShoesOnline\bin\roslyn\csi.exe.config
+D:\DACS\ShoesOnline\bin\roslyn\csi.rsp
+D:\DACS\ShoesOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\DACS\ShoesOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\DACS\ShoesOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\DACS\ShoesOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\DACS\ShoesOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\DACS\ShoesOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\DACS\ShoesOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\DACS\ShoesOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\DACS\ShoesOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\DACS\ShoesOnline\bin\roslyn\Microsoft.Managed.Core.targets
+D:\DACS\ShoesOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\DACS\ShoesOnline\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\DACS\ShoesOnline\bin\roslyn\System.AppContext.dll
+D:\DACS\ShoesOnline\bin\roslyn\System.Collections.Immutable.dll
+D:\DACS\ShoesOnline\bin\roslyn\System.Console.dll
+D:\DACS\ShoesOnline\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\DACS\ShoesOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\DACS\ShoesOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\DACS\ShoesOnline\bin\roslyn\System.Globalization.Calendars.dll
+D:\DACS\ShoesOnline\bin\roslyn\System.IO.Compression.dll
+D:\DACS\ShoesOnline\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\DACS\ShoesOnline\bin\roslyn\System.IO.FileSystem.dll
+D:\DACS\ShoesOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\DACS\ShoesOnline\bin\roslyn\System.Net.Http.dll
+D:\DACS\ShoesOnline\bin\roslyn\System.Net.Sockets.dll
+D:\DACS\ShoesOnline\bin\roslyn\System.Reflection.Metadata.dll
+D:\DACS\ShoesOnline\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\DACS\ShoesOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\DACS\ShoesOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\DACS\ShoesOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\DACS\ShoesOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\DACS\ShoesOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\DACS\ShoesOnline\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\DACS\ShoesOnline\bin\roslyn\System.ValueTuple.dll
+D:\DACS\ShoesOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\DACS\ShoesOnline\bin\roslyn\System.Xml.XmlDocument.dll
+D:\DACS\ShoesOnline\bin\roslyn\System.Xml.XPath.dll
+D:\DACS\ShoesOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\DACS\ShoesOnline\bin\roslyn\vbc.exe
+D:\DACS\ShoesOnline\bin\roslyn\vbc.exe.config
+D:\DACS\ShoesOnline\bin\roslyn\vbc.rsp
+D:\DACS\ShoesOnline\bin\roslyn\VBCSCompiler.exe
+D:\DACS\ShoesOnline\bin\roslyn\VBCSCompiler.exe.config
+D:\DACS\ShoesOnline\bin\Antlr3.Runtime.dll
+D:\DACS\ShoesOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\DACS\ShoesOnline\bin\Microsoft.Web.Infrastructure.dll
+D:\DACS\ShoesOnline\bin\Newtonsoft.Json.dll
+D:\DACS\ShoesOnline\bin\System.Web.Helpers.dll
+D:\DACS\ShoesOnline\bin\System.Web.Mvc.dll
+D:\DACS\ShoesOnline\bin\System.Web.Optimization.dll
+D:\DACS\ShoesOnline\bin\System.Web.Razor.dll
+D:\DACS\ShoesOnline\bin\System.Web.WebPages.Deployment.dll
+D:\DACS\ShoesOnline\bin\System.Web.WebPages.dll
+D:\DACS\ShoesOnline\bin\System.Web.WebPages.Razor.dll
+D:\DACS\ShoesOnline\bin\WebGrease.dll
+D:\DACS\ShoesOnline\bin\System.Web.Helpers.xml
+D:\DACS\ShoesOnline\bin\System.Web.Mvc.xml
+D:\DACS\ShoesOnline\bin\System.Web.Optimization.xml
+D:\DACS\ShoesOnline\bin\System.Web.Razor.xml
+D:\DACS\ShoesOnline\bin\System.Web.WebPages.xml
+D:\DACS\ShoesOnline\bin\System.Web.WebPages.Deployment.xml
+D:\DACS\ShoesOnline\bin\System.Web.WebPages.Razor.xml
+D:\DACS\ShoesOnline\bin\Newtonsoft.Json.xml
+D:\DACS\ShoesOnline\bin\Antlr3.Runtime.pdb
+D:\DACS\ShoesOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\DACS\ShoesOnline\obj\Debug\ShoesOnline.csproj.AssemblyReference.cache
+D:\DACS\ShoesOnline\obj\Debug\ShoesOnline.csproj.CoreCompileInputs.cache
+D:\DACS\ShoesOnline\obj\Debug\ShoesOnline.csproj.CopyComplete
+D:\DACS\ShoesOnline\obj\Debug\ShoesOnline.dll
+D:\DACS\ShoesOnline\obj\Debug\ShoesOnline.pdb
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\ShoesOnline.dll.config
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\ShoesOnline.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\ShoesOnline.pdb
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\csc.exe
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\csc.exe.config
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\csc.rsp
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\csi.exe
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\csi.exe.config
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\csi.rsp
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\System.AppContext.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\System.Console.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\System.IO.Compression.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\System.Net.Http.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\System.ValueTuple.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\vbc.exe
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\vbc.exe.config
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\vbc.rsp
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\VBCSCompiler.exe
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\Antlr3.Runtime.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\System.Web.Helpers.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\System.Web.Mvc.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\System.Web.Optimization.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\System.Web.Razor.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\System.Web.WebPages.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\WebGrease.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\System.Web.Helpers.xml
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\System.Web.Mvc.xml
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\System.Web.Optimization.xml
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\System.Web.Razor.xml
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\System.Web.WebPages.xml
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\Newtonsoft.Json.xml
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\Antlr3.Runtime.pdb
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\obj\Debug\ShoesOnline.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\obj\Debug\ShoesOnline.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\obj\Debug\ShoesOnline.csproj.CopyComplete
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\obj\Debug\ShoesOnline.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\obj\Debug\ShoesOnline.pdb
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\EntityFramework.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\EntityFramework.xml
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\PagedList.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\PagedList.Mvc.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\PagedList.xml
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\PagedList.Mvc.xml
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\WebMatrix.Data.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\WebMatrix.WebData.dll
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\WebMatrix.Data.xml
+C:\Users\Admin\Desktop\New folder (2)\ShoesOnline\bin\WebMatrix.WebData.xml
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\ShoesOnline.dll.config
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\ShoesOnline.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\ShoesOnline.pdb
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\csc.exe
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\csc.exe.config
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\csc.rsp
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\csi.exe
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\csi.exe.config
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\csi.rsp
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.AppContext.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Console.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.IO.Compression.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Net.Http.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.ValueTuple.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\vbc.exe
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\vbc.exe.config
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\vbc.rsp
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\VBCSCompiler.exe
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\Antlr3.Runtime.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\EntityFramework.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\PagedList.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\PagedList.Mvc.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\System.Web.Helpers.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\System.Web.Mvc.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\System.Web.Optimization.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\System.Web.Razor.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\System.Web.WebPages.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\WebGrease.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\WebMatrix.Data.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\WebMatrix.WebData.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\EntityFramework.xml
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\PagedList.xml
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\PagedList.Mvc.xml
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\System.Web.Helpers.xml
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\System.Web.Mvc.xml
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\System.Web.Optimization.xml
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\System.Web.Razor.xml
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\System.Web.WebPages.xml
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\Newtonsoft.Json.xml
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\Antlr3.Runtime.pdb
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\WebMatrix.Data.xml
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\WebMatrix.WebData.xml
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\obj\Debug\ShoesOnline.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\obj\Debug\ShoesOnline.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\obj\Debug\ShoesOnline.csproj.CopyComplete
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\obj\Debug\ShoesOnline.dll
+C:\Users\Admin\Desktop\Đồ Án Cơ Sở\Source Code\ShoesOnline\obj\Debug\ShoesOnline.pdb
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\ShoesOnline.dll.config
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\ShoesOnline.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\ShoesOnline.pdb
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\csc.exe
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\csc.exe.config
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\csc.rsp
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\csi.exe
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\csi.exe.config
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\csi.rsp
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.AppContext.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Collections.Immutable.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Console.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Globalization.Calendars.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.IO.Compression.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.IO.FileSystem.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Net.Http.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Net.Sockets.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Reflection.Metadata.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.ValueTuple.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Xml.XPath.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\vbc.exe
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\vbc.exe.config
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\vbc.rsp
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\VBCSCompiler.exe
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\roslyn\VBCSCompiler.exe.config
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\Antlr3.Runtime.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\EntityFramework.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\EntityFramework.SqlServer.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\Microsoft.Web.Infrastructure.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\Newtonsoft.Json.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\PagedList.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\PagedList.Mvc.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\System.Web.Helpers.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\System.Web.Mvc.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\System.Web.Optimization.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\System.Web.Razor.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\System.Web.WebPages.Deployment.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\System.Web.WebPages.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\System.Web.WebPages.Razor.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\WebGrease.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\WebMatrix.Data.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\WebMatrix.WebData.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\EntityFramework.xml
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\EntityFramework.SqlServer.xml
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\PagedList.xml
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\PagedList.Mvc.xml
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\System.Web.Helpers.xml
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\System.Web.Mvc.xml
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\System.Web.Optimization.xml
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\System.Web.Razor.xml
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\System.Web.WebPages.xml
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\System.Web.WebPages.Deployment.xml
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\System.Web.WebPages.Razor.xml
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\Newtonsoft.Json.xml
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\Antlr3.Runtime.pdb
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\WebMatrix.Data.xml
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\WebMatrix.WebData.xml
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\obj\Debug\ShoesOnline.csproj.AssemblyReference.cache
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\obj\Debug\ShoesOnline.csproj.CoreCompileInputs.cache
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\obj\Debug\ShoesOnline.csproj.CopyComplete
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\obj\Debug\ShoesOnline.dll
+D:\Đồ Án Cơ Sở\Source Code\ShoesOnline\obj\Debug\ShoesOnline.pdb

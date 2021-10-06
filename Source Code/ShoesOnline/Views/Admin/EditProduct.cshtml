@@ -1,0 +1,161 @@
+﻿@model ShoesOnline.Models.sanPham
+@{
+    ViewBag.Title = "EditProduct";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Edit Products</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Products</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+    <section class="content">
+        <div class="container-fluid">
+            <!-- Horizontal Form -->
+            <div class="card card-primary">
+                <div class="card-header">
+                </div>
+                <!-- /.box-header -->
+                <!-- form start -->
+                <form id="quickForm">
+                    <div class="card-body">
+                        <div class="form-horizontal" method="post" action="/Products/EditProduct">
+                            @Html.HiddenFor(model => model.maSP)
+                            <div class="box-body">
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-2 control-label">Mã SP</label>
+                                    <div class="col-md-10">
+                                        <div style="font:18px; padding:5px 0 0 5px">@Model.maSP</div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-2 control-label">Tên SP</label>
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.tenSP, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.tenSP, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-2 control-label">Hình ảnh</label>
+                                    <div class="col-md-10">
+                                        <input type="file" name="fileupload" />
+                                        @ViewBag.Notification
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-2 control-label">Ngày đăng</label>
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.ngayDang, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.ngayDang, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-2 control-label">Nội dung</label>
+                                    <div class="col-md-10">
+                                        <textarea name="noiDung" id="summernote">Nội dung sản phẩm</textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-2 control-label">Giá bán</label>
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.giaBan, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.giaBan, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-2 control-label">Giảm giá</label>
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.giamGia, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.giamGia, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-2 control-label">Mã loại</label>
+                                    <div class="col-md-10">
+                                        @Html.DropDownList("maLoai");
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-2 control-label">Đơn vị tính</label>
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.dvt, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.dvt, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-2 control-label">Giới tính</label>
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.gioiTinh, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.gioiTinh, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.box-body -->
+                            <div class="box-footer">
+                                <button type="submit" class="btn btn-default">Cancel</button>
+                                <button type="submit" class="btn btn-info pull-right">Update</button>
+                            </div>
+                            <!-- /.box-footer -->
+                        </div>
+                    </div>
+                    <!-- /.box -->
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- jQuery -->
+    <script src="/AdminFE/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="/AdminFE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery-validation -->
+    <script src="/AdminFE/plugins/jquery-validation/jquery.validate.min.js"></script>
+    <script src="/AdminFE/plugins/jquery-validation/additional-methods.min.js"></script>
+    <!-- AdminLTE App -->
+    <!-- AdminLTE for demo purposes -->
+    <!-- Page specific script -->
+    <!-- jQuery -->
+    <!-- Summernote -->
+    <script src="/AdminFE/plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- CodeMirror -->
+    <script src="/AdminFE/plugins/codemirror/codemirror.js"></script>
+    <script src="/AdminFE/plugins/codemirror/mode/css/css.js"></script>
+    <script src="/AdminFE/plugins/codemirror/mode/xml/xml.js"></script>
+    <script src="/AdminFE/plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script>
+        $(function () {
+            // Summernote
+            $('#summernote').summernote()
+
+            // CodeMirror
+            CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {
+                mode: "htmlmixed",
+                theme: "monokai"
+            });
+        })
+    </script>
+}
+

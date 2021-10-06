@@ -1,0 +1,88 @@
+﻿@using ShoesOnline.Models
+@model List<Cart>
+@{
+    ViewBag.Title = "Cart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .update {
+        background: none;
+        border: none;
+        padding: 0px;
+        margin-left: 50px;
+    }
+</style>
+<div class="container">
+    <div class="check">
+        <h1>Giỏ hàng</h1>
+        <div class="col-md-9 cart-items">
+
+            <script>
+$(document).ready(function(c) {
+					$('.close1').on('click', function(c){
+						$('.cart-header').fadeOut('slow', function(c){
+							$('.cart-header').remove();
+						});
+						});
+					});
+            </script>
+            @foreach (var i in Model)
+            {
+                <div class="cart-header">
+                    <div class="close1"> </div>
+                    <div class="cart-sec simpleCart_shelfItem">
+                        <div class="cart-item cyc">
+                            <img src="@i.ShinhDD" class="img-responsive " alt="" />
+                        </div>
+                        <div class="cart-item-info">
+                            <h3><a href="#">@i.StenSP</a><span>@i.SmaSP</span></h3>
+                            @using (Html.BeginForm("UpdateCart", "Cart", new { @SMaSP = i.SmaSP }))
+                            {
+                                <ul class="qty">
+                                    <li>
+                                        <input type="number" min="1" name="txtAmount" value="@i.IsoLuong" />
+                                    </li>
+                                    <li><p>Giá tiền : @i.IthanhTien</p></li>
+                                </ul>
+                                <div class="delivery">
+                                    <p><a href="@Url.Action("Details", "Products", new { id = i.SmaSP })">Chi tiết</a></p>
+                                    <p><input type="submit" class="update" value="Cập nhật" /></p>
+                                    <span>@Html.ActionLink("Xóa", "DeleteCart", new { @SMaSP = i.SmaSP })</span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            }
+                        </div>
+                        <div class="clearfix"></div>
+
+                    </div>
+                </div>
+            }
+            <script>
+$(document).ready(function(c) {
+					$('.close2').on('click', function(c){
+							$('.cart-header2').fadeOut('slow', function(c){
+						$('.cart-header2').remove();
+					});
+					});
+					});
+            </script>
+        </div>
+        <div class="col-md-3 cart-total">
+            <a class="continue" href="@Url.Action("ClearCart","Cart")">Xóa Tất Cả</a>
+            <div class="price-details">
+                <h3>Price Details</h3>
+                <span>Tổng số lượng</span>
+                <span class="total1">@ViewBag.Total</span>
+                <div class="clearfix"></div>
+            </div>
+            <ul class="total_price">
+                <li class="last_price"> <h4>TỔNG TIỀN</h4></li>
+                <li class="last_price"><span>@ViewBag.TotalMoney</span></li>
+            </ul>
+            <div class="clearfix"></div>
+            <a class="order" href="@Url.Action("Order","Cart")">Đặt Hàng</a>
+        </div>
+
+        <div class="clearfix"> </div>
+    </div>
+</div>

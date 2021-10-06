@@ -1,0 +1,126 @@
+﻿@using ShoesOnline.Models
+@{
+    ViewBag.Title = "BoyProductsByCollections";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    CommonInfo x = (CommonInfo)HttpContext.Current.Application["Shared"];
+}
+<div>
+    <img src="~/Asset/banners/banner8.jpg" width="100%" min-height="460px" />
+</div>
+<div class="product">
+    <div class="container">
+        <div class="col-md-3 product-price">
+            <div class=" rsidebar span_1_of_left">
+                <div class="of-left">
+                    <h3 class="cate">Categories</h3>
+                </div>
+                <ul class="menu">
+                    <li class="item1">
+                        <a href="@Url.Action("Index","MenProducts")">NAM</a>
+                        <ul class="cute">
+                            @foreach (loaiSP i in x.MenCollections)
+                            {
+                                <li class="subitem1"><a href="@Url.Action("MenProductsByCollections","MenProducts", new { id = i.maLoai})"> @i.loaiHang</a></li>
+                            }
+                        </ul>
+                    </li>
+                    <li class="item2">
+                        <a href="#">NỮ</a>
+                        <ul class="cute">
+                            @foreach (loaiSP i in x.WomenCollections)
+                            {
+                                <li class="subitem1"><a href="@Url.Action("WomenProductsByCollections","WomenProducts", new { id = i.maLoai})"> @i.loaiHang</a></li>
+                            }
+                        </ul>
+                    </li>
+                    <li class="item3">
+                        <a href="#">BÉ TRAI</a>
+                        <ul class="cute">
+                            @foreach (loaiSP i in x.BoyCollections)
+                            {
+                                <li class="subitem1"><a href="@Url.Action("BoyProductsByCollections","BoyProducts", new { id = i.maLoai})"> @i.loaiHang</a></li>
+                            }
+                        </ul>
+                    </li>
+                    <li class="item4">
+                        <a href="#">BÉ GÁI</a>
+                        <ul class="cute">
+                            @foreach (loaiSP i in x.GirlCollections)
+                            {
+                                <li class="subitem1"><a href="@Url.Action("GirlProductsByCollections","GirlProducts", new { id = i.maLoai})"> @i.loaiHang</a></li>
+                            }
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--initiate accordion-->
+            <script type="text/javascript">
+                $(function () {
+                    var menu_ul = $('.menu > li > ul'),
+                        menu_a = $('.menu > li > a');
+                    menu_ul.hide();
+                    menu_a.click(function (e) {
+                        e.preventDefault();
+                        if (!$(this).hasClass('active')) {
+                            menu_a.removeClass('active');
+                            menu_ul.filter(':visible').slideUp('normal');
+                            $(this).addClass('active').next().stop(true, true).slideDown('normal');
+                        } else {
+                            $(this).removeClass('active');
+                            $(this).next().stop(true, true).slideUp('normal');
+                        }
+                    });
+
+                });
+            </script>
+            <!---->
+            <div class="product-middle">
+                <div class="fit-top">
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            <div class="sellers">
+                <div class="of-left-in">
+                </div>
+                <div class="tags">
+                </div>
+            </div>
+            <!---->
+            <div class="product-bottom">
+            </div>
+            <div class=" per1">
+            </div>
+        </div>
+        <div class="col-md-9 product1">
+            <div class=" bottom-product">
+                @foreach (var Products in Model)
+                {
+                    <div class="col-md-4 bottom-cd simpleCart_shelfItem">
+                        <div class="product-at ">
+                            <a href="@Url.Action("Details", "BoyProducts", new { id = Products.maSP })">
+
+                                <img class="img-responsive" src="@Products.hinhDD" alt="@Products.tenSP">
+                            </a>
+                        </div>
+                        <a href="@Url.Action("Details", "BoyProducts", new { id = Products.maSP })" class="tun">@Products.tenSP</a>
+                        <a href="@Url.Action("Details", "BoyProducts", new { id = Products.maSP })" class="item_add"><p class="number item_price"><i> </i>@Products.giaBan VND</p></a>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="clearfix"> </div>
+        <nav class="in">
+            <ul class="pagination">
+                <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">2 <span class="sr-only"></span></a></li>
+                <li><a href="#">3 <span class="sr-only"></span></a></li>
+                <li><a href="#">4 <span class="sr-only"></span></a></li>
+                <li><a href="#">5 <span class="sr-only"></span></a></li>
+                <li> <a href="#" aria-label="Next"><span aria-hidden="true">»</span> </a> </li>
+            </ul>
+        </nav>
+    </div>
+</div>

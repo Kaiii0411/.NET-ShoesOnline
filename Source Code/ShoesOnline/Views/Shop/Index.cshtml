@@ -1,0 +1,143 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center col-sm-12 col-xs-12">
+            <h1 class="text-center m-t-15 m-b-25 p-t-15" style=" margin: 10px 0 20px; line-height: 1.4; color: #000000;">Hệ Thống Cửa Hàng</h1>
+        </div>
+        <div class="col-md-6 col-md-push-3 col-sm-12 col-xs-12 text-center">
+            <select class="store_province">
+                <option>Tất cả</option>
+                <option>Thành phố Hồ Chí Minh</option>
+                <option>Thành phố Hưng Yên</option>
+                <option>Thành phố Hà Nội</option>
+                <option>Tỉnh Hà Nam</option>
+                <option>Thành phố Đà Nẵng</option>
+                <option>Thành phố An Giang</option>
+                <option>Thành phố Bạc Liêu</option>
+                <option>Thành phố Bắc Ninh</option>
+                <option>Thành phố Bến Tre</option>
+                <option>Thành phố Quy Nhơn</option>
+                <option>Thành phố Phan Thiết</option>
+            </select>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-md-8 col-md-push-2 col-xs-12 col-sm-12">
+            <div class="img-map map-ht" id="map" style="position: relative; overflow: hidden;">
+                <div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
+                    <div>
+                        <iframe aria-hidden="true" frameborder="0" tabindex="-1" style="position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37494223.23909492!2d103!3d55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x453c569a896724fb%3A0x1409fdf86611f613!2sRussia!5e0!3m2!1sen!2sin!4v1415776049771"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-xs-12 col-sm-12 address-detail">
+            <ul class="list-store  clearfix content-product-list loaded" style="margin-top:30px">
+                <li class="product-resize fixheight" style="height: 211px;">
+                    <div class="address-add">
+                        <h3>CH Biti's Hunter- Hồ Chí Minh</h3>
+                        <p>Địa chỉ:  Số 47, Đường Nguyễn Huệ, P.Bến Nghé, Quận 1, TP. HCM</p>
+                        <p>Giờ mở cửa: Tạm đóng cửa chuyển sang bán online</p>
+                        <p>Số điện thoại: 0282.200.7476</p>
+                        <p class="map-location">
+                            <a href="https://goo.gl/maps/HXtWLUE2EckSzALo8" class="text-right view-map" target="_blank">XEM CHỈ ĐƯỜNG <i class="fa fa-share" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                </li>
+                <li class="product-resize fixheight" style="height: 211px;">
+                    <div class="address-add">
+                        <h3>CH Biti's Hunter - Nguyễn Trãi</h3>
+                        <p>Địa chỉ: 98 Nguyễn Trãi,P.Bến Thành, Quận 1, Hồ Chí Minh</p>
+                        <p>Giờ mở cửa: Tạm đóng cửa</p>
+                        <p>Số điện thoại: 028.392.54368</p>
+                        <p class="map-location">
+                            <a href="https://goo.gl/maps/kJMusTsfMK47j4g9A" class="text-right view-map" target="_blank">XEM CHỈ ĐƯỜNG <i class="fa fa-share" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                </li>
+                <li class="product-resize fixheight" style="height: 211px;">
+                    <div class="address-add">
+                        <h3>CHTT Tháp Mười</h3>
+                        <p>Địa chỉ: 56 - 58 - 60 - 62 Tháp Mười, P.2, Q.6, TP.HCM</p>
+                        <p>Giờ mở cửa: Tạm đóng cửa</p>
+                        <p>Số điện thoại: 028.3950 5536</p>
+                        <p class="map-location">
+                            <a href="https://goo.gl/maps/1XGeQnu8vuABHYFM7" class="text-right view-map" target="_blank">XEM CHỈ ĐƯỜNG <i class="fa fa-share" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                </li>
+                <li class="product-resize fixheight" style="height: 211px;">
+                    <div class="address-add">
+                        <h3>CHTT Thống Nhất</h3>
+                        <p>Địa chỉ: 594 Thống Nhất, Phường 16, Quận Gò Vấp, TP.HCM</p>
+                        <p>Giờ mở cửa: Tạm đóng cửa</p>
+                        <p>Số điện thoại: 02822.160.234</p>
+                        <p class="map-location">
+                            <a href="https://goo.gl/maps/cjPxiEXauqDtfVJP6" class="text-right view-map" target="_blank">XEM CHỈ ĐƯỜNG <i class="fa fa-share" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                </li>
+                <li class="product-resize fixheight" style="height: 211px;">
+                    <div class="address-add">
+                        <h3>CHTT Xô Viết Nghệ Tĩnh</h3>
+                        <p>Địa chỉ: 54C Xô Viết Nghệ Tĩnh, phường 19, quận Bình Thạnh, TP.HCM</p>
+                        <p>Giờ mở cửa: Tạm đóng cửa</p>
+                        <p>Số điện thoại: 0286.2764.700</p>
+                        <p class="map-location">
+                            <a href="https://goo.gl/maps/UTH73eDKReSWfizk8" class="text-right view-map" target="_blank">XEM CHỈ ĐƯỜNG <i class="fa fa-share" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                </li>
+                <li class="product-resize fixheight" style="height: 211px;">
+                    <div class="address-add">
+                        <h3>CHTT Bà Chiểu</h3>
+                        <p>Địa chỉ: 1 Hồng Bàng, P.1, Q.Bình Thạnh, TP.HCM</p>
+                        <p>Giờ mở cửa: Tạm đóng cửa</p>
+                        <p>Số điện thoại: 028.3843 4354</p>
+                        <p class="map-location">
+                            <a href="https://goo.gl/maps/qAs76VKt7qcNKdtf7" class="text-right view-map" target="_blank">XEM CHỈ ĐƯỜNG <i class="fa fa-share" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                </li>
+                <li class="product-resize fixheight" style="height: 211px;">
+                    <div class="address-add">
+                        <h3>CHTT Quang Trung</h3>
+                        <p>Địa chỉ: 642 Quang Trung, Phường 11, Quận Gò Vấp, TP.HCM</p>
+                        <p>Giờ mở cửa: Tạm đóng cửa</p>
+                        <p>Số điện thoại: 028.3989 3252</p>
+                        <p class="map-location">
+                            <a href="https://goo.gl/maps/aQ4YMA1CvQxaDrky6" class="text-right view-map" target="_blank">XEM CHỈ ĐƯỜNG <i class="fa fa-share" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                </li>
+                <li class="product-resize fixheight" style="height: 211px;">
+                    <div class="address-add">
+                        <h3>CHTT Nguyễn Đình Chiểu</h3>
+                        <p>Địa chỉ: 668-670 Nguyễn Đình Chiểu P.3 , Q.3, TP.HCM</p>
+                        <p>Giờ mở cửa: Tạm đóng cửa</p>
+                        <p>Số điện thoại: 028.3833.9841</p>
+                        <p class="map-location">
+                            <a href="https://goo.gl/maps/gJk6Tv6EmP3GD2X47" class="text-right view-map" target="_blank">XEM CHỈ ĐƯỜNG <i class="fa fa-share" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                </li>
+                <li class="product-resize fixheight" style="height: 211px;">
+                    <div class="address-add">
+                        <h3>CHTT Phạm Hùng</h3>
+                        <p>Địa chỉ: C5/20 Phạm Hùng, Xã Bình Hưng, Huyện Bình Chánh, TP.HCM</p>
+                        <p>Giờ mở cửa: Tạm đóng cửa</p>
+                        <p>Số điện thoại: 028.3636.2322</p>
+                        <p class="map-location">
+                            <a href="https://goo.gl/maps/AxGYqk8WpxAyge6MA" class="text-right view-map" target="_blank">XEM CHỈ ĐƯỜNG <i class="fa fa-share" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<link href="~/Content/Shop.css" rel="stylesheet" />

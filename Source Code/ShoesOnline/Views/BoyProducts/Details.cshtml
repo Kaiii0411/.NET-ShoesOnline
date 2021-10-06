@@ -1,0 +1,173 @@
+﻿@using ShoesOnline.Models
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    CommonInfo x = (CommonInfo)HttpContext.Current.Application["Shared"];
+}
+<link href="~/Content/style.css" rel="stylesheet" />
+<div class="product">
+    <div class="container">
+        <div class="col-md-3 product-price">
+            <div class=" rsidebar span_1_of_left">
+                <div class="of-left">
+                    <h3 class="cate">Categories</h3>
+                </div>
+                <ul class="menu">
+                    <li class="item1">
+                        <a href="@Url.Action("Index","MenProducts")">NAM</a>
+                        <ul class="cute">
+                            @foreach (loaiSP i in x.MenCollections)
+                            {
+                                <li class="subitem1"><a href="@Url.Action("MenProductsByCollections","MenProducts", new { id = i.maLoai})"> @i.loaiHang</a></li>
+                            }
+                        </ul>
+                    </li>
+                    <li class="item2">
+                        <a href="#">NỮ</a>
+                        <ul class="cute">
+                            @foreach (loaiSP i in x.WomenCollections)
+                            {
+                                <li class="subitem1"><a href="@Url.Action("WomenProductsByCollections","WomenProducts", new { id = i.maLoai})"> @i.loaiHang</a></li>
+                            }
+                        </ul>
+                    </li>
+                    <li class="item3">
+                        <a href="#">BÉ TRAI</a>
+                        <ul class="cute">
+                            @foreach (loaiSP i in x.BoyCollections)
+                            {
+                                <li class="subitem1"><a href="@Url.Action("BoyProductsByCollections","BoyProducts", new { id = i.maLoai})"> @i.loaiHang</a></li>
+                            }
+                        </ul>
+                    </li>
+                    <li class="item4">
+                        <a href="#">BÉ GÁI</a>
+                        <ul class="cute">
+                            @foreach (loaiSP i in x.GirlCollections)
+                            {
+                                <li class="subitem1"><a href="@Url.Action("GirlProductsByCollections","GirlProducts", new { id = i.maLoai})"> @i.loaiHang</a></li>
+                            }
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--initiate accordion-->
+            <script type="text/javascript">
+                $(function () {
+                    var menu_ul = $('.menu > li > ul'),
+                        menu_a = $('.menu > li > a');
+                    menu_ul.hide();
+                    menu_a.click(function (e) {
+                        e.preventDefault();
+                        if (!$(this).hasClass('active')) {
+                            menu_a.removeClass('active');
+                            menu_ul.filter(':visible').slideUp('normal');
+                            $(this).addClass('active').next().stop(true, true).slideDown('normal');
+                        } else {
+                            $(this).removeClass('active');
+                            $(this).next().stop(true, true).slideUp('normal');
+                        }
+                    });
+
+                });
+            </script>
+            <!---->
+            <div class="product-middle">
+                <div class="fit-top">
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            <div class="sellers">
+                <div class="of-left-in">
+                </div>
+                <div class="tags">
+                </div>
+            </div>
+            <!---->
+            <div class="product-bottom">
+            </div>
+            <div class=" per1">
+            </div>
+        </div>
+        <div class="col-md-9 product-price1">
+            <div class="col-md-5 single-top">
+                <div>
+                    <img class="img-responsive" src="@Model.hinhDD" alt="@Model.tenSP">
+                </div>
+                <!-- FlexSlider -->
+                <script defer src="/Scripts/jquery.flexslider.js"></script>
+                <link rel="stylesheet" href="/Content/flexslider.css" type="text/css" media="screen" />
+                <script>
+                    // Can also be used with $(document).ready()
+                    $(window).load(function () {
+                        $('.flexslider').flexslider({
+                            animation: "slide",
+                            controlNav: "thumbnails"
+                        });
+                    });
+                </script>
+            </div>
+            <div class="col-md-7 single-top-in simpleCart_shelfItem">
+                <div class="single-para ">
+                    <h4>@Model.tenSP</h4>
+                    <h6>Mã sản phẩm: @Model.maSP</h6>
+                    <h5 class="item_price">@Model.giaBan VND</h5>
+                    <p>
+                        @Model.noiDung
+                    </p>
+                    <div class="available">
+                        <ul>
+                            <li class="size-in">
+                                Size<select>
+                                    <option>39</option>
+                                    <option>40</option>
+                                    <option>41</option>
+                                    <option>42</option>
+                                    <option>43</option>
+                                    <option>44</option>
+                                    <option>45</option>
+                                </select>
+                            </li>
+                            <div class="clearfix"> </div>
+                        </ul>
+                    </div>
+                    <a href="@Url.Action("AddToCart","Cart", new { @SmaSP = @Model.maSP, @strURL = Request.Url.ToString() })" class="add-cart item_add">
+                        MUA NGAY
+                    </a>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+            <!---->
+            <div class="cd-tabs is-ended">
+                <nav>
+                    <ul class="cd-tabs-navigation">
+                        <li><a data-content="fashion" href="#0">Description </a></li>
+                    </ul>
+                </nav>
+                <div class="cd-tabs-content">
+                    <div data-content="fashion">
+                        <div class="facts">
+                            <p>@Model.noiDung</p>
+                            <ul>
+                                <li>Research</li>
+                                <li>Design and Development</li>
+                                <li>Porting and Optimization</li>
+                                <li>System integration</li>
+                                <li>Verification, Validation and Testing</li>
+                                <li>Maintenance and Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"> </div>
+        <hr>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37494223.23909492!2d103!3d55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x453c569a896724fb%3A0x1409fdf86611f613!2sRussia!5e0!3m2!1sen!2sin!4v1415776049771"></iframe>
+        </div>
+    </div>
+</div>
+<!--//content-->

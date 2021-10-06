@@ -1,0 +1,201 @@
+﻿@model ShoesOnline.ViewModels.DashboardViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Dashboard</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index","Admin")">Home</a></li>
+                    <li class="breadcrumb-item active">Dashboard</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+            <div class="col-lg-4 col-xs-6">
+                <!-- small box -->
+                <div class="small-box bg-aqua">
+                    <div class="inner">
+                        <h3>@Model.products_count</h3>
+                        <p>Products</p>
+                    </div>
+                    <div class="icon">
+                        <i class="ion ion-bag"></i>
+                    </div>
+                    <a href="@Url.Action("Products","Admin")" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-4 col-xs-6">
+                <!-- small box -->
+                <div class="small-box bg-green">
+                    <div class="inner">
+                        <h3>@Model.orders_count<sup style="font-size: 20px"></sup></h3>
+                        <p>Orders</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <a href="@Url.Action("Orders","Admin")" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-4 col-xs-6">
+                <!-- small box -->
+                <div class="small-box bg-red">
+                    <div class="inner">
+                        <h3>@Model.users_count</h3>
+                        <p>Users</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <a href="@Url.Action("Users","Admin")" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+        <!-- Main row -->
+        <div class="row">
+            <!-- Left col -->
+            <section class="col-lg-7 connectedSortable">
+                <!-- Custom tabs (Charts with tabs)-->
+                <!-- DONUT CHART -->
+                <div class="box box-danger">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Donut Chart</h3>
+                    </div>
+                    <div class="box-body chart-responsive">
+                        <div class="chart" id="sales-chart" style="height: 300px; position: relative;"></div>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+                <!-- /.nav-tabs-custom -->
+            </section>
+            <!-- /.Left col -->
+            <!-- right col (We are only adding the ID to make the widgets sortable)-->
+            <section class="col-lg-5 connectedSortable">
+                <!-- TO DO List -->
+                <div class="box box-primary">
+                    <div class="box-header">
+                        <h3 class="box-title">To Do List</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <!-- See dist/js/pages/dashboard.js to activate the todoList plugin -->
+                        <ul class="todo-list">
+                            <li>
+                                <!-- drag handle -->
+                                <span class="handle">
+                                    <i class="fa fa-ellipsis-v"></i>
+                                    <i class="fa fa-ellipsis-v"></i>
+                                </span>
+                                <!-- checkbox -->
+                                <input type="checkbox" value="">
+                                <!-- todo text -->
+                                <span class="text">New updates</span>
+                                <!-- Emphasis label -->
+                                <small class="label label-danger"><i class="fa fa-clock-o"></i> 2 mins</small>
+                                <!-- General tools such as edit or delete-->
+                                <div class="tools">
+                                    <i class="fa fa-edit"></i>
+                                    <i class="fa fa-trash-o"></i>
+                                </div>
+                            </li>                         
+                            <li>
+                                <span class="handle">
+                                    <i class="fa fa-ellipsis-v"></i>
+                                    <i class="fa fa-ellipsis-v"></i>
+                                </span>
+                                <input type="checkbox" value="">
+                                <span class="text">Ward Visit</span>
+                                <small class="label label-success"><i class="fa fa-clock-o"></i> 3 days</small>
+                                <div class="tools">
+                                    <i class="fa fa-edit"></i>
+                                    <i class="fa fa-trash-o"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="handle">
+                                    <i class="fa fa-ellipsis-v"></i>
+                                    <i class="fa fa-ellipsis-v"></i>
+                                </span>
+                                <input type="checkbox" value="">
+                                <span class="text">Any other Activity</span>
+                                <small class="label label-primary"><i class="fa fa-clock-o"></i> 1 week</small>
+                                <div class="tools">
+                                    <i class="fa fa-edit"></i>
+                                    <i class="fa fa-trash-o"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="handle">
+                                    <i class="fa fa-ellipsis-v"></i>
+                                    <i class="fa fa-ellipsis-v"></i>
+                                </span>
+                                <input type="checkbox" value="">
+                                <span class="text">Any other Activity</span>
+                                <small class="label label-default"><i class="fa fa-clock-o"></i> 1 month</small>
+                                <div class="tools">
+                                    <i class="fa fa-edit"></i>
+                                    <i class="fa fa-trash-o"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
+            </section>
+            <!-- right col -->
+        </div>
+        <!-- /.row (main row) -->
+    </div>
+</section>
+
+<!-- Morris.js charts -->
+<script src="~/AdminFE/chart/raphael/raphael.min.js"></script>
+<script src="~/AdminFE/chart/morris.js/morris.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="~/AdminFE/chart/font-awesome/css/font-awesome.min.css">
+<!-- Ionicons -->
+<link rel="stylesheet" href="~/AdminFE/chart/Ionicons/css/ionicons.min.css">
+<!-- Theme style -->
+<link rel="stylesheet" href="/AdminFE/dist/css/adminlte.min.css">
+<link rel="stylesheet" href="~/AdminFE/chart/dist/css/skins/skin-blue.min.css">
+<!-- jQuery 3 -->
+<script src="~/AdminFE/chart/jquery/dist/jquery.min.js"></script>
+<!-- Google Font -->
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+<script src="~/AdminFE/chart/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+  $(function () {
+    "use strict";
+    //DONUT CHART
+    var donut = new Morris.Donut({
+      element: 'sales-chart',
+      resize: true,
+      colors: ["#3c8dbc", "#f56954", "#00a65a"],
+      data: [
+        {label: "Products", value: @Model.products_count},
+        {label: "Orders", value: @Model.orders_count},
+        {label: "Users", value: @Model.users_count}
+      ],
+      hideHover: 'auto'
+    });
+  });
+</script>

@@ -1,0 +1,137 @@
+﻿@model IEnumerable<ShoesOnline.Models.sanPham>
+@using PagedList.Mvc;
+@using ShoesOnline.Models
+@{
+    ViewBag.Title = "Products";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@helper Truncate(string input, int length)
+{
+    if (input.Length < length)
+    {
+        @input
+    }
+    else
+    {
+        @input.Substring(0, length)<text>...</text>
+    }
+}
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Products List</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Products</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card card-primary">
+                    <div class="card-header">
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <table id="example2" class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Mã sản phẩm</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Hình sản phẩm</th>
+                                    <th>Ngày đăng</th>
+                                    <th>Giá bán</th>
+                                    <th>Loại sản phẩm</th>
+                                    <th>Chức năng</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.maSP)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.tenSP)
+                                        </td>
+                                        <td>
+                                            <img style="width:150px" src="@Url.Content(item.hinhDD)" />
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.ngayDang)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.giaBan)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.maLoai)
+                                        </td>
+                                        <td>
+                                            @Html.ActionLink("Sửa", "EditProduct", new { id = item.maSP }) |
+                                            @Html.ActionLink("Chi tiết", "ProductDetails", new { id = item.maSP }) |
+                                            @Html.ActionLink("Xóa", "DeleteProduct", new { id = item.maSP })
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+</section>
+<!-- /.content -->
+<!-- jQuery -->
+<script src="/AdminFE/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="/AdminFE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="/AdminFE/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="/AdminFE/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="/AdminFE/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="/AdminFE/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="/AdminFE/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="/AdminFE/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="/AdminFE/plugins/jszip/jszip.min.js"></script>
+<script src="/AdminFE/plugins/pdfmake/pdfmake.min.js"></script>
+<script src="/AdminFE/plugins/pdfmake/vfs_fonts.js"></script>
+<script src="/AdminFE/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="/AdminFE/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="/AdminFE/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<link href="~/AdminFE/plugins/datatables-bs4/css/dataTables.bootstrap4.css" rel="stylesheet" />
+<link href="~/AdminFE/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    $(function () {
+        $("#example1").DataTable({
+            "responsive": true, "lengthChange": false, "autoWidth": false,
+            "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+        }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+        $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+            "responsive": true,
+        });
+    });</script>

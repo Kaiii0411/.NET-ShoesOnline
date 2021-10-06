@@ -1,0 +1,66 @@
+﻿.text-center{
+    text-align:center;
+}
+.store_province {
+    padding: 8px 15px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+#map {
+    width: 100%;
+    max-width: 100%;
+}
+    #map.map-ht {
+        height: 400px;
+    }
+.list-store {
+    padding: 0;
+}
+    .list-store li {
+        float: left;
+        margin-right: 1%;
+        width: 32.3333%;
+        background: #fff;
+        margin-bottom: 14px;
+        position: relative;
+        border: 1px solid #ebebeb;
+    }
+
+.address-add {
+    padding: 15px;
+}
+    .address-add h3 {
+        color: #212121;
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0 0 10px 0;
+    }
+    .address-add p {
+        color: #696969;
+        font-weight: 300;
+    }
+.map-location {
+    position: absolute;
+    right: 15px;
+    bottom: 0px;
+}
+.list-store li .address_add p {
+    color: #696969;
+    font-weight: 300;
+}
+p {
+    margin-bottom: 10px;
+    line-height: 24px;
+}
+ul{
+    list-style:none;
+}
+.text-right{
+    text-align:right;
+}
+.view-map {
+    color: #696969;
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+}

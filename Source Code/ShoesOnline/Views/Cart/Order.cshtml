@@ -1,0 +1,145 @@
+﻿
+@using ShoesOnline.Models
+@model List<Cart>
+@{
+    ViewBag.Title = "Cart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .update {
+        background: none;
+        border: none;
+        padding: 0px;
+        margin-left: 50px;
+    }
+</style>
+<div class="container">
+    <div class="check">
+        <h1>Vui lòng kiểm tra và xác nhận đơn hàng của bạn!</h1>
+        <div class="col-md-9 cart-items">
+
+            <script>
+                $(document).ready(function (c) {
+                    $('.close1').on('click', function (c) {
+                        $('.cart-header').fadeOut('slow', function (c) {
+                            $('.cart-header').remove();
+                        });
+                    });
+                });
+            </script>
+            @foreach (var i in Model)
+            {
+                <div class="cart-header">
+                    <div class="close1"> </div>
+                    <div class="cart-sec simpleCart_shelfItem">
+                        <div class="cart-item cyc">
+                            <img src="@i.ShinhDD" class="img-responsive " alt="" />
+                        </div>
+                        <div class="cart-item-info">
+                            <h3><a href="#">@i.StenSP</a><span>@i.SmaSP</span></h3>
+                            @using (Html.BeginForm("UpdateCart", "Cart", new { @SMaSP = i.SmaSP }))
+                            {
+                                <ul class="qty">
+                                    <li>
+                                        Số lượng: @i.IsoLuong
+                                    </li>
+                                    <li><p>Giá tiền : @i.IthanhTien</p></li>
+                                </ul>
+                            }
+                        </div>
+                        <div class="clearfix"></div>
+
+                    </div>
+                </div>
+            }
+            <script>
+                $(document).ready(function (c) {
+                    $('.close2').on('click', function (c) {
+                        $('.cart-header2').fadeOut('slow', function (c) {
+                            $('.cart-header2').remove();
+                        });
+                    });
+                });
+            </script>
+        </div>
+        <div class="col-md-3 cart-total">
+            <a class="continue" href="@Url.Action("Cart","Cart")">Trở Về Giỏ Hàng</a>
+            <div class="price-details">
+                <h3>Price Details</h3>
+                <span>Tổng số lượng</span>
+                <span class="total1">@ViewBag.Total</span>
+                <div class="clearfix"></div>
+            </div>
+            <ul class="total_price">
+                <li class="last_price"> <h4>TỔNG TIỀN</h4></li>
+                <li class="last_price"><span>@ViewBag.TotalMoney</span></li>
+                <div class="clearfix"> </div>
+            </ul>
+
+
+            <div class="clearfix"></div>
+            <a type="button" class="order" data-toggle="modal" data-target="#exampleModal">
+                Xác nhận đơn hàng
+            </a>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h1 style="text-align:center">THÔNG TIN ĐƠN HÀNG</h1>
+                @{
+                    taiKhoanTV tk = (taiKhoanTV)Session["User"];
+                }
+                <table align="center">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.ValidationSummary(true)
+                        <tr style="height:40px">
+                            <td style="padding-right:20px">First Name  </td>
+                            <td style="font-weight:bold"> @tk.tenTV</td>
+                        </tr>
+                        <tr style="height:40px">
+                            <td>Email  </td>
+                            <td style="font-weight:bold"> @tk.email</td>
+                        </tr>
+                        <tr style="height:40px">
+                            <td>Phone  </td>
+                            <td style="font-weight:bold"> @tk.soDT</td>
+                        </tr>
+                        <tr style="height:40px">
+                            <td>Address  </td>
+                            <td style="font-weight:bold"> @tk.diaChi</td>
+                        </tr>
+                        <tr style="height:40px">
+                            <td>Order Date  </td>
+                            <td style="font-weight:bold"> @DateTime.Now.ToShortDateString()</td>
+                        </tr>
+                        <tr style="height:40px">
+                            <td>Order Date New </td>
+                            <td style="font-weight:bold"> @DateTime.Now.AddDays(15).ToShortDateString()</td>
+                        </tr>
+                        <tr style="height:40px">
+                            <td></td>
+                            <td style="font-weight:bold">
+                                <input type="submit" value="Agree To Order" />
+                            </td>
+                        </tr>
+                    }
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<hr />

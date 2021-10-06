@@ -1,0 +1,119 @@
+﻿@model ShoesOnline.Models.QuanTriVien
+@{
+    ViewBag.Title = "AdminProfile";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Profile</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Admin Profile</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+
+                <!-- Profile Image -->
+                @if (Session["AdminAccount"] != null)
+                {
+                    <div class="card card-primary card-outline">
+                        <div class="card-body box-profile">
+                            <div class="text-center">
+                                <img class="profile-user-img img-fluid img-circle"
+                                     src="~/Asset/Profile/admin.jpg"
+                                     alt="User profile picture">
+                            </div>
+                            <h3 class="profile-username text-center">@Session["AdminAccount"].ToString()</h3>
+
+                            <p class="text-muted text-center">Quản trị viên</p>
+
+                            <ul class="list-group list-group-unbordered mb-3">
+                                <li class="list-group-item">
+                                    <b>Followers</b> <a class="float-right">1,322</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>Following</b> <a class="float-right">543</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>Friends</b> <a class="float-right">13,287</a>
+                                </li>
+                            </ul>
+
+                            <a href="@Url.Action("RecoverPasswordAdmin","Admin")" class="btn btn-primary btn-block"><b>Change Password</b></a>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                }
+            </div>
+            <!-- /.col -->
+            @if (Session["AdminAccount"] != null)
+            {
+                <div class="col-md-9">
+                    <div class="card">
+                        <div class="card-header p-2">
+                            <ul class="nav nav-pills">
+                                <li class="nav-item"><a class="nav-link active" href="#settings" data-toggle="tab">Settings</a></li>
+                            </ul>
+                        </div><!-- /.card-header -->
+                        <div class="card-body">
+                            <div class="tab-content">
+                                <!-- /.tab-pane -->
+                                <div class=" active tab-pane" id="settings">
+                                    <form class="form-horizontal">
+                                        <div class="form-group row">
+                                            <label for="inputName" class="col-sm-2 col-form-label">Name: </label>
+                                            <div class="col-sm-10">
+                                                <p class="form-control">@Session["AdminName"].ToString()</p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputEmail" class="col-sm-2 col-form-label">Email: </label>
+                                            <div class="col-sm-10">
+                                                <p class="form-control">@Session["AdminEmail"].ToString()</p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputName2" class="col-sm-2 col-form-label">Phone: </label>
+                                            <div class="col-sm-10">
+                                                <p class="form-control">@Session["AdminPhone"].ToString()</p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- /.tab-pane -->
+                            </div>
+                            <!-- /.tab-content -->
+                        </div><!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                </div>
+            }
+
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </div><!-- /.container-fluid -->
+</section>
+<!-- /.content -->
+<!-- jQuery -->
+<script src="/AdminFE/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="/AdminFE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="/AdminFE/dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="/AdminFE/dist/js/demo.js"></script>

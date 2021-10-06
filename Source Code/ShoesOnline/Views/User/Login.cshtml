@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .adloginbtn {
+        float: right;
+        outline: none;
+        padding: 11px 20px;
+        color: #FFF;
+        background: #034ea1;
+        width: 31%;
+        text-align: center;
+        margin: 1em auto 0;
+        text-decoration:none;
+    }
+        .adloginbtn :hover {
+            background: #000;
+            outline: none;
+        }
+</style>
+<div class="container">
+    <div class="account">
+        @using (Html.BeginForm("Login", "User", FormMethod.Post))
+        {
+            @Html.ValidationSummary(true)
+            <h1>Account</h1>
+            <div class="account-pass">
+                <div class="col-md-8 account-top">
+                    <form>
+                        <div>
+                            <span>User</span>
+                            <span type="text">
+                                @Html.TextBox("User")
+                                @ViewData["Error1"]
+                            </span>
+                        </div>
+                        <div>
+                            <span>Password</span>
+                            <span type="password">
+                                @Html.Password("Password")
+                                @ViewData["Error2"]
+                            </span>
+                        </div>
+                        <input type="submit" value="ĐĂNG NHẬP">
+                        <a class="adloginbtn" href="@Url.Action("Login","Admin")">ĐĂNG NHẬP BẰNG TÀI KHOẢN QUẢN TRỊ</a>
+                    </form>
+                    <br />
+                    <b>@ViewBag.Notification</b>
+                </div>
+                <div class="col-md-4 left-account ">
+                    <a href="single.html"><img class="img-responsive " src="~/Asset/bottom/bottom7.jpg" alt=""></a>
+                    <div class="five">
+                        <h2>25% </h2><span>discount</span>
+                    </div>
+                    <a href="@Url.Action("Register","User")" class="create">TẠO TÀI KHOẢN</a>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        }
+    </div>
+</div>

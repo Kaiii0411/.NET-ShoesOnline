@@ -1,0 +1,141 @@
+﻿@model IEnumerable<ShoesOnline.Models.taiKhoanTV>
+@using PagedList.Mvc;
+@using ShoesOnline.Models
+@{
+    ViewBag.Title = "Users";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@helper Truncate(string input, int length)
+{
+    if (input.Length < length)
+    {
+        @input
+    }
+    else
+    {
+        @input.Substring(0, length)<text>...</text>
+    }
+}
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Users List</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index","Admin")">Home</a></li>
+                    <li class="breadcrumb-item active">Users</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card card-primary">
+                    <div class="card-header">
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <table id="example2" class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Tên tài khoản</th>
+                                    <th>Họ đệm</th>
+                                    <th>Tên thành viên</th>
+                                    <th>Ngày sinh</th>
+                                    <th>SĐT</th>
+                                    <th>Email</th>
+                                    <th>Địa chỉ</th>
+                                    <th>Chức năng</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.taiKhoanKH)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.hoDem)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.tenTV)
+                                    </td>
+                                    <td>
+                                        @Convert.ToDateTime(item.ngaySinh).ToString("dd/MM/yyyy")
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.soDT)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.email)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.diaChi)
+                                    </td>
+                                    <td>
+                                        @Html.ActionLink("Chi tiết", "UserProfile", new { id = item.maKH }) |
+                                        @Html.ActionLink("Xóa", "DeleteUser", new { id = item.maKH })
+                                    </td>
+                                </tr>
+                                }
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+</section>
+<!-- /.content -->
+<!-- jQuery -->
+<script src="/AdminFE/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="/AdminFE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="/AdminFE/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="/AdminFE/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="/AdminFE/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="/AdminFE/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="/AdminFE/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="/AdminFE/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="/AdminFE/plugins/jszip/jszip.min.js"></script>
+<script src="/AdminFE/plugins/pdfmake/pdfmake.min.js"></script>
+<script src="/AdminFE/plugins/pdfmake/vfs_fonts.js"></script>
+<script src="/AdminFE/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="/AdminFE/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="/AdminFE/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<link href="~/AdminFE/plugins/datatables-bs4/css/dataTables.bootstrap4.css" rel="stylesheet" />
+<link href="~/AdminFE/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    $(function () {
+        $("#example1").DataTable({
+            "responsive": true, "lengthChange": false, "autoWidth": false,
+            "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+        }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+        $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+            "responsive": true,
+        });
+    });</script>
+

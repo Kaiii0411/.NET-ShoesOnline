@@ -1,0 +1,905 @@
+﻿@using ShoesOnline.Models
+@{
+    ViewBag.Title = "Index";
+}
+@{
+    CommonInfo x = (CommonInfo)HttpContext.Current.Application["Shared"];
+}
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="~/Asset/banners/index1.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="~/Asset/banners/index4.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="~/Asset/banners/index3.jpg" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="~/Asset/banners/index5.jpg" alt="Four slide">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<div class="clearfix"></div>
+<div class="container">
+    <div class="content-top">
+        <div class="grid-in">
+            <h2>DÀNH RIÊNG CHO BẠN</h2>
+            <div class="col-md-4 grid-top">
+                <a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+                    <img class="img-responsive" src="~/Asset/products/men/hunter/hunter16.jpg" alt="">
+                    <div class="b-wrapper">
+                        <h3 class="b-animate b-from-left    b-delay03 ">
+                            <span>Hunter</span>
+                        </h3>
+                    </div>
+                </a>
+
+
+                <p><a href="single.html">Hunter</a></p>
+            </div>
+            <div class="col-md-4 grid-top">
+                <a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+                    <img class="img-responsive" src="~/Asset/products/men/sandal/sandal13.jpg" alt="">
+                    <div class="b-wrapper">
+                        <h3 class="b-animate b-from-left    b-delay03 ">
+                            <span>Sandal</span>
+                        </h3>
+                    </div>
+                </a>
+                <p><a href="single.html">Sandal</a></p>
+            </div>
+            <div class="col-md-4 grid-top">
+                <a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+                    <img class="img-responsive" src="~/Asset/products/men/sport/sport4.jpg" alt="">
+                    <div class="b-wrapper">
+                        <h3 class="b-animate b-from-left    b-delay03 ">
+                            <span>Sport</span>
+                        </h3>
+                    </div>
+                </a>
+                <p><a href="single.html">Giày thể thao</a></p>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="grid-in">
+            <div class="col-md-4 grid-top">
+                <a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+                    <img class="img-responsive" src="~/Asset/products/men/running/running1.jpg" alt="">
+                    <div class="b-wrapper">
+                        <h3 class="b-animate b-from-left    b-delay03 ">
+                            <span>Running</span>
+                        </h3>
+                    </div>
+                </a>
+                <p><a href="single.html">Giày chạy bộ</a></p>
+            </div>
+            <div class="col-md-4 grid-top">
+                <a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+                    <img class="img-responsive" src="~/Asset/products/men/soccer/soccer16.jpg" alt="">
+                    <div class="b-wrapper">
+                        <h3 class="b-animate b-from-left    b-delay03 ">
+                            <span>Soccer</span>
+                        </h3>
+                    </div>
+                </a>
+                <p><a href="single.html">Giày đá banh</a></p>
+            </div>
+            <div class="col-md-4 grid-top">
+                <a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+                    <img class="img-responsive" src="~/Asset/products/men/western/western11.jpg" alt="">
+                    <div class="b-wrapper">
+                        <h3 class="b-animate b-from-left    b-delay03 ">
+                            <span>Western</span>
+                        </h3>
+                    </div>
+                </a>
+                <p><a href="single.html">Giày Tây</a></p>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <div id="carouselContent" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active text-center p-4">
+                <p style="font-size:18px">ĐỔI SIZE MIỄN PHÍ <small>Tại tất cả cửa hàng, trong vòng 1 tuần</small></p>
+            </div>
+            <div class="carousel-item text-center p-4">
+                <p style="font-size:18px">ĐỔI SIZE MIỄN PHÍ <small>Tại tất cả cửa hàng, trong vòng 1 tuần</small></p>
+            </div>
+        </div>
+        <a class="fa fa-angle-left carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+            <span class="fa fa-angle-left"></span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+            <span class="fa fa-angle-right"></span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="content-top-bottom">
+        <div class="col-md-6 men">
+            <a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+                <img class="img-responsive" src="~/Asset/midle-content-index/midle1.jpg" alt="">
+                <div class="b-wrapper">
+                    <h3 class="b-animate b-from-top top-in   b-delay03 ">
+                        <span>News</span>
+                    </h3>
+                </div>
+            </a>
+
+
+        </div>
+        <div class="col-md-6">
+            <div class="col-md1 ">
+                <a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+                    <img class="img-responsive" src="~/Asset/midle-content-index/midle2.jpg" alt="">
+                    <div class="b-wrapper">
+                        <h3 class="b-animate b-from-top top-in1   b-delay03 ">
+                            <span>News</span>
+                        </h3>
+                    </div>
+                </a>
+
+            </div>
+            <div class="col-md2">
+                <div class="col-md-6 men1">
+                    <a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+                        <img class="img-responsive" src="~/Asset/midle-content-index/midle3.jpg" alt="">
+                        <div class="b-wrapper">
+                            <h3 class="b-animate b-from-top top-in2   b-delay03 ">
+                                <span>News</span>
+                            </h3>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-md-6 men2">
+                    <a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+                        <img class="img-responsive" src="~/Asset/midle-content-index/midle4.jpg" alt="">
+                        <div class="b-wrapper">
+                            <h3 class="b-animate b-from-top top-in2   b-delay03 ">
+                                <span>News</span>
+                            </h3>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+<div class="container">
+    <div class="content-top grid-in">
+        <h2>SẢN PHẨM NỔI BẬT</h2>
+    </div>
+    <hr class="hr-border" />
+    <div class="row">
+        <div class="row slide-board1">
+            <div class="col-md-9 slide-board3">
+                <h3>
+                    DÀNH CHO NAM
+                </h3>
+            </div>
+            <div class="col-md-3 slide-board2">
+                <!-- Controls -->
+                <div class="controls pull-right hidden-xs">
+                    <a class="left fa fa-chevron-left btn btn-success" href="#carousel-example"
+                       data-slide="prev"></a><a class="right fa fa-chevron-right btn btn-success" href="#carousel-example"
+                                                data-slide="next"></a>
+                </div>
+            </div>
+        </div>
+        <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="row">
+                        @foreach (sanPham i in x.MenProductsHunter(4))
+                        {
+                            <div class="col-sm-3">
+                                <div class="col-item">  
+                                    <div class="photo">
+                                        <img src="@i.hinhDD" class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h5>
+                                                    @i.maSP
+                                                </h5>
+                                                <h5 class="price-text-color">
+                                                    @i.giaBan VND
+                                                </h5>
+                                            </div>
+                                            <div class="rating hidden-sm col-md-6">
+                                                <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="" class="hidden-sm"></a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="@Url.Action("Details", "MenProducts", new { id = i.maSP })" class="hidden-sm">Chi tiết</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        @foreach (sanPham i in x.MenProductsSandal(4))
+                        {
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="photo">
+                                        <img src="@i.hinhDD" class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h5>
+                                                    @i.maSP
+                                                </h5>
+                                                <h5 class="price-text-color">
+                                                    @i.giaBan VND
+                                                </h5>
+                                            </div>
+                                            <div class="rating hidden-sm col-md-6">
+                                                <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm"></a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="@Url.Action("Details", "MenProducts", new { id = i.maSP })" class="hidden-sm">Chi tiết</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        @foreach (sanPham i in x.MenProductsSport(4))
+                        {
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="photo">
+                                        <img src="@i.hinhDD" class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h5>
+                                                    @i.maSP
+                                                </h5>
+                                                <h5 class="price-text-color">
+                                                    @i.giaBan VND
+                                                </h5>
+                                            </div>
+                                            <div class="rating hidden-sm col-md-6">
+                                                <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm"></a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="@Url.Action("Details", "MenProducts", new { id = i.maSP })" class="hidden-sm">Chi tiết</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="hr-border" />
+    <div class="row">
+        <div class="row slide-board1">
+            <div class="col-md-9 slide-board3">
+                <h3>
+                    DÀNH CHO NỮ
+                </h3>
+            </div>
+            <div class="col-md-3 slide-board2">
+                <!-- Controls -->
+                <div class="controls pull-right hidden-xs">
+                    <a class="left fa fa-chevron-left btn btn-primary" href="#carousel-example-generic"
+                       data-slide="prev"></a><a class="right fa fa-chevron-right btn btn-primary" href="#carousel-example-generic"
+                                                data-slide="next"></a>
+                </div>
+            </div>
+        </div>
+        <div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="row">
+                        @foreach (sanPham i in x.WomenProductsHunter(4))
+                        {
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="photo">
+                                        <img src="@i.hinhDD" class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h5>
+                                                    @i.maSP
+                                                </h5>
+                                                <h5 class="price-text-color">
+                                                    @i.giaBan VND
+                                                </h5>
+                                            </div>
+                                            <div class="rating hidden-sm col-md-6">
+                                                <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm"></a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="@Url.Action("Details", "WomenProducts", new { id = i.maSP })" class="hidden-sm">Chi tiết</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        @foreach (sanPham i in x.WomenProductsSandal(4))
+                        {
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="photo">
+                                        <img src="@i.hinhDD" class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h5>
+                                                    @i.maSP
+                                                </h5>
+                                                <h5 class="price-text-color">
+                                                    @i.giaBan VND
+                                                </h5>
+                                            </div>
+                                            <div class="rating hidden-sm col-md-6">
+                                                <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm"></a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="@Url.Action("Details", "WomenProducts", new { id = i.maSP })" class="hidden-sm">Chi tiết</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        @foreach (sanPham i in x.WomenProductsRunning(4))
+                        {
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="photo">
+                                        <img src="@i.hinhDD" class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h5>
+                                                    @i.maSP
+                                                </h5>
+                                                <h5 class="price-text-color">
+                                                    @i.giaBan VND
+                                                </h5>
+                                            </div>
+                                            <div class="rating hidden-sm col-md-6">
+                                                <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm"></a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="@Url.Action("Details", "WomenProducts", new { id = i.maSP })" class="hidden-sm">Chi tiết</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        @foreach (sanPham i in x.WomenProductsFashion(4))
+                        {
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="photo">
+                                        <img src="@i.hinhDD" class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h5>
+                                                    @i.maSP
+                                                </h5>
+                                                <h5 class="price-text-color">
+                                                    @i.giaBan VND
+                                                </h5>
+                                            </div>
+                                            <div class="rating hidden-sm col-md-6">
+                                                <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm"></a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="@Url.Action("Details", "WomenProducts", new { id = i.maSP })" class="hidden-sm">Chi tiết</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="hr-border" />
+    <div class="row">
+        <div class="row slide-board1">
+            <div class="col-md-9 slide-board3">
+                <h3>
+                    DÀNH CHO BÉ TRAI
+                </h3>
+            </div>
+            <div class="col-md-3 slide-board2">
+                <!-- Controls -->
+                <div class="controls pull-right hidden-xs">
+                    <a class="left fa fa-chevron-left btn btn-success" href="#carousel-example"
+                       data-slide="prev"></a><a class="right fa fa-chevron-right btn btn-success" href="#carousel-example"
+                                                data-slide="next"></a>
+                </div>
+            </div>
+        </div>
+        <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="row">
+                        @foreach (sanPham i in x.BoyProductsSport(4))
+                        {
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="photo">
+                                        <img src="@i.hinhDD" class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h5>
+                                                    @i.maSP
+                                                </h5>
+                                                <h5 class="price-text-color">
+                                                    @i.giaBan VND
+                                                </h5>
+                                            </div>
+                                            <div class="rating hidden-sm col-md-6">
+                                                <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm"></a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="@Url.Action("Details", "BoyProducts", new { id = i.maSP })" class="hidden-sm">Chi tiết</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        @foreach (sanPham i in x.BoyProductsSandal(4))
+                        {
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="photo">
+                                        <img src="@i.hinhDD" class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h5>
+                                                    @i.maSP
+                                                </h5>
+                                                <h5 class="price-text-color">
+                                                    @i.giaBan VND
+                                                </h5>
+                                            </div>
+                                            <div class="rating hidden-sm col-md-6">
+                                                <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm"></a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="@Url.Action("Details", "BoyProducts", new { id = i.maSP })" class="hidden-sm">Chi tiết</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        @foreach (sanPham i in x.BoyProductsSlipper(4))
+                        {
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="photo">
+                                        <img src="@i.hinhDD" class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h5>
+                                                    @i.maSP
+                                                </h5>
+                                                <h5 class="price-text-color">
+                                                    @i.giaBan VND
+                                                </h5>
+                                            </div>
+                                            <div class="rating hidden-sm col-md-6">
+                                                <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm"></a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="@Url.Action("Details", "BoyProducts", new { id = i.maSP })" class="hidden-sm">Chi tiết</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        @foreach (sanPham i in x.BoyProductsSandal(4))
+                        {
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="photo">
+                                        <img src="@i.hinhDD" class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h5>
+                                                    @i.maSP
+                                                </h5>
+                                                <h5 class="price-text-color">
+                                                    @i.giaBan VND
+                                                </h5>
+                                            </div>
+                                            <div class="rating hidden-sm col-md-6">
+                                                <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm"></a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="@Url.Action("Details", "BoyProducts", new { id = i.maSP })" class="hidden-sm">Chi tiết</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="hr-border" />
+    <div class="row">
+        <div class="row slide-board1">
+            <div class="col-md-9 slide-board3">
+                <h3>
+                    DÀNH CHO BÉ GÁI
+                </h3>
+            </div>
+            <div class="col-md-3 slide-board2">
+                <!-- Controls -->
+                <div class="controls pull-right hidden-xs">
+                    <a class="left fa fa-chevron-left btn btn-success" href="#carousel-example"
+                       data-slide="prev"></a><a class="right fa fa-chevron-right btn btn-success" href="#carousel-example"
+                                                data-slide="next"></a>
+                </div>
+            </div>
+        </div>
+        <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="row">
+                        @foreach (sanPham i in x.GirlProductsSport(4))
+                        {
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="photo">
+                                        <img src="@i.hinhDD" class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h5>
+                                                    @i.maSP
+                                                </h5>
+                                                <h5 class="price-text-color">
+                                                    @i.giaBan VND
+                                                </h5>
+                                            </div>
+                                            <div class="rating hidden-sm col-md-6">
+                                                <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm"></a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="@Url.Action("Details", "GirlProducts", new { id = i.maSP })" class="hidden-sm">Chi tiết</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        @foreach (sanPham i in x.GirlProductsSandal(4))
+                        {
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="photo">
+                                        <img src="@i.hinhDD" class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h5>
+                                                    @i.maSP
+                                                </h5>
+                                                <h5 class="price-text-color">
+                                                    @i.giaBan VND
+                                                </h5>
+                                            </div>
+                                            <div class="rating hidden-sm col-md-6">
+                                                <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm"></a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="@Url.Action("Details", "GirlProducts", new { id = i.maSP })" class="hidden-sm">Chi tiết</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        @foreach (sanPham i in x.GirlProductsSlipper(4))
+                        {
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="photo">
+                                        <img src="@i.hinhDD" class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h5>
+                                                    @i.maSP
+                                                </h5>
+                                                <h5 class="price-text-color">
+                                                    @i.giaBan VND
+                                                </h5>
+                                            </div>
+                                            <div class="rating hidden-sm col-md-6">
+                                                <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm"></a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="@Url.Action("Details", "GirlProducts", new { id = i.maSP })" class="hidden-sm">Chi tiết</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        @foreach (sanPham i in x.GirlProductsSandal(4))
+                        {
+                            <div class="col-sm-3">
+                                <div class="col-item">
+                                    <div class="photo">
+                                        <img src="@i.hinhDD" class="img-responsive" alt="a" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="row">
+                                            <div class="price col-md-6">
+                                                <h5>
+                                                    @i.maSP
+                                                </h5>
+                                                <h5 class="price-text-color">
+                                                    @i.giaBan VND
+                                                </h5>
+                                            </div>
+                                            <div class="rating hidden-sm col-md-6">
+                                                <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                </i><i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="separator clear-left">
+                                            <p class="btn-add">
+                                                <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm"></a>
+                                            </p>
+                                            <p class="btn-details">
+                                                <i class="fa fa-list"></i><a href="@Url.Action("Details", "GirlProducts", new { id = i.maSP })" class="hidden-sm">Chi tiết</a>
+                                            </p>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="hr-border" />
+</div>

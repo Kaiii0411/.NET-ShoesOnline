@@ -1,0 +1,100 @@
+﻿@model ShoesOnline.Models.taiKhoanTV
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <div class=" register">
+        @using (Html.BeginForm("Register", "User", FormMethod.Post))
+        {
+            @Html.ValidationSummary(true)
+            <h1>Register</h1>
+            <form>
+                <div class="col-md-6 register-top-grid">
+                    @Html.ValidationSummary(true)
+                    <h3>Personal infomation</h3>
+                    <div>
+                        <span>First Name</span>
+                        <span type="text">
+                            @Html.TextBox("FirstName")
+                            @ViewData["Error1"]
+                        </span>
+                    </div>
+                    <div>
+                        <span>Last Name</span>
+                        <span type="text">
+                            @Html.TextBox("LastName")
+                            @ViewData["Error2"]
+                        </span>
+                    </div>
+                    <div>
+                        <span>Gender</span>
+                        <span style="margin: 10px 10px 10px 0;" type="text">
+                            Nam @Html.RadioButton("Gender", "Nam")
+                            Nữ @Html.RadioButton("Gender", "Nữ")
+                        </span>
+                    </div>
+                    <div>
+                        <span>Home Address</span>
+                        <span type="text">
+                            <input type="text" name="Address" />
+                        </span>
+                    </div>
+                    <div>
+                        <span>District</span>
+                        <span style="margin: 10px 10px 10px 0;" type="text">
+                            @Html.DropDownList("maQuanHuyen")
+                        </span>
+                    </div>
+                    <div>
+                        <span>Birthday</span>
+                        <span style="margin: 10px 10px 10px 0;" type="text">
+                            <input type="date" name="Birthday" />
+                        </span>
+                    </div>
+                    <div>
+                        <span>Phone Number</span>
+                        <span type="text">
+                            @Html.TextBox("Phone")
+                            @ViewData["Error3"]
+                        </span>
+                    </div>
+                    <div>
+                        <span>Email</span>
+                        <span type="text">
+                            @Html.TextBox("Email")
+                            @ViewData["Error4"]
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-6 register-bottom-grid register-top-grid">
+                    <h3>Login information</h3>
+                    <div>
+                        <span>User</span>
+                        <span type="text">
+                            @Html.TextBox("User")
+                            @ViewData["Error5"]
+                        </span>
+                    </div>
+                    <div>
+                        <span>Password</span>
+                        <span type="password">
+                            @Html.Password("Password")
+                            @ViewData["Error6"]
+                        </span>
+                    </div>
+                    <div>
+                        <span>Confirm Password</span>
+                        <span type="password">
+                            @Html.Password("ConfirmPass")
+                            @ViewData["Error7"]
+                        </span>
+                    </div>
+                    <input type="submit" value="Submit">
+
+                </div>
+                <div class="clearfix"> </div>
+            </form>
+        }
+    </div>
+</div>

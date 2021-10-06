@@ -1,0 +1,391 @@
+﻿@using ShoesOnline.Models
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="~/Scripts/jquery.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="/Content/style.css" rel="stylesheet" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="New Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css' />
+    <link href="/Content/memenu.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="~/Scripts/memenu.js"></script>
+    <script>$(document).ready(function () { $(".memenu").memenu(); });</script>
+    <script src="~/Scripts/simpleCart.min.js"></script>
+    <link href="~/Content/slider.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <script src="~/Asset/bs4/js/bootstrap.js"></script>
+    <script src="~/Asset/bs4/js/bootstrap.min.js"></script>
+    <script src="~/Asset/bs4/dist/carousel.js"></script>
+    <script src="~/Asset/bs4/dist/modal.js"></script>
+    <script src="~/Asset/bs4/src/modal.js"></script>
+</head>
+<body>
+    <!--header-->
+    <div class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-left">
+                    <ul>
+                        @if (Session["User"] != null)
+                        {
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">Xin chào, @Session["Name"].ToString()</button>
+                                    <div class="dropdown-content">
+                                        <a href="@Url.Action("Logout","User")">Đăng xuất</a>
+                                        <a href="@Url.Action("ChangePassword","User")">Đổi mật khẩu</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>@Html.Action("CartPartial", "Cart")</li>
+                            <li><a href="@Url.Action("Index","Shop")" style=" text-decoration: none; color: #fff; font-size: 1.0em; margin: 0 2em 0 0;">TÌM CỬA HÀNG</a></li>
+                        }
+                        else
+                        {
+                            <li><a href="@Url.Action("Login","User")">ĐĂNG NHẬP</a></li>
+                            <li><a href="@Url.Action("Register","User")">ĐĂNG KÝ</a></li>
+                            <li>@Html.Action("CartPartial", "Cart")</li>
+                            <li><a href="@Url.Action("Index","Shop")" style=" text-decoration: none; color: #fff; font-size: 1.0em; margin: 0 2em 0 0;">TÌM CỬA HÀNG</a></li>
+                        }
+                    </ul>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <div class="container">
+            @{
+                CommonInfo x = (CommonInfo)HttpContext.Current.Application["Shared"];
+            }
+            <div class="head-top">
+                <div class="logo">
+                    <a href="@Url.Action("Index","Home")"><img src="~/Asset/images/bitis_logo.png" alt="" width="40%"></a>
+                </div>
+                <div class=" h_menu4">
+                    <ul class="memenu skyblue">
+                        <li>
+                            <a class="color1" href="@Url.Action("Index","MenProducts")">NAM</a>
+                            <div class="mepanel">
+                                <div class="row">
+                                    <div class="col1">
+                                        <div class="h_nav">
+                                            <h4>Nam</h4>
+                                            <ul>
+                                                @foreach (loaiSP i in x.MenCollections)
+                                                {
+                                                    <li><a href="@Url.Action("MenProductsByCollections","MenProducts", new { id = i.maLoai})"> @i.loaiHang</a></li>
+                                                }
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col1">
+                                        <div class="h_nav">
+                                            <h4>Nữ</h4>
+                                            <ul>
+                                                @foreach (loaiSP i in x.WomenCollections)
+                                                {
+                                                    <li><a href="@Url.Action("WomenProductsByCollections","WomenProducts", new { id = i.maLoai})"> @i.loaiHang</a></li>
+                                                }
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col1">
+                                        <div class="h_nav">
+                                            <h4>Bé trai</h4>
+
+                                            <ul>
+                                                @foreach (loaiSP i in x.BoyCollections)
+                                                {
+                                                    <li><a href="@Url.Action("BoyProductsByCollections","BoyProducts", new { id = i.maLoai})"> @i.loaiHang</a></li>
+
+                                                }
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col1">
+                                        <div class="h_nav">
+                                            <h4>Bé gái</h4>
+
+                                            <ul>
+                                                @foreach (loaiSP i in x.GirlCollections)
+                                                {
+                                                    <li><a href="@Url.Action("GirlProductsByCollections","GirlProducts", new { id = i.maLoai})"> @i.loaiHang</a></li>
+                                                }
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="color2" href="@Url.Action("Index","WomenProducts")">NỮ</a>
+                            <div class="mepanel">
+                                <div class="row">
+                                    <div class="col1">
+                                        <div class="h_nav">
+                                            <h4>Nam</h4>
+                                            <ul>
+                                                @foreach (loaiSP i in x.MenCollections)
+                                                {
+                                                    <li><a href="@Url.Action("MenProductsByCollections","MenProducts", new { id = i.maLoai})"> @i.loaiHang</a></li>
+                                                }
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col1">
+                                        <div class="h_nav">
+                                            <h4>Nữ</h4>
+                                            <ul>
+                                                @foreach (loaiSP i in x.WomenCollections)
+                                                {
+                                                    <li><a href="@Url.Action("WomenProductsByCollections","WomenProducts", new { id = i.maLoai})"> @i.loaiHang</a></li>
+                                                }
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col1">
+                                        <div class="h_nav">
+                                            <h4>Bé trai</h4>
+
+                                            <ul>
+                                                @foreach (loaiSP i in x.BoyCollections)
+                                                {
+                                                    <li><a href="@Url.Action("BoyProductsByCollections","BoyProducts", new { id = i.maLoai})"> @i.loaiHang</a></li>
+
+                                                }
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col1">
+                                        <div class="h_nav">
+                                            <h4>Bé gái</h4>
+
+                                            <ul>
+                                                @foreach (loaiSP i in x.GirlCollections)
+                                                {
+                                                    <li><a href="@Url.Action("GirlProductsByCollections","GirlProducts", new { id = i.maLoai})"> @i.loaiHang</a></li>
+                                                }
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="color4" href="@Url.Action("Index","BoyProducts")">BÉ TRAI</a>
+                            <div class="mepanel">
+                                <div class="row">
+                                    <div class="col1">
+                                        <div class="h_nav">
+                                            <h4>Nam</h4>
+                                            <ul>
+                                                @foreach (loaiSP i in x.MenCollections)
+                                                {
+                                                    <li><a href="@Url.Action("MenProductsByCollections","MenProducts", new { id = i.maLoai})"> @i.loaiHang</a></li>
+                                                }
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col1">
+                                        <div class="h_nav">
+                                            <h4>Nữ</h4>
+                                            <ul>
+                                                @foreach (loaiSP i in x.WomenCollections)
+                                                {
+                                                    <li><a href="@Url.Action("WomenProductsByCollections","WomenProducts", new { id = i.maLoai})"> @i.loaiHang</a></li>
+                                                }
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col1">
+                                        <div class="h_nav">
+                                            <h4>Bé trai</h4>
+
+                                            <ul>
+                                                @foreach (loaiSP i in x.BoyCollections)
+                                                {
+                                                    <li><a href="@Url.Action("BoyProductsByCollections","BoyProducts", new { id = i.maLoai})"> @i.loaiHang</a></li>
+
+                                                }
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col1">
+                                        <div class="h_nav">
+                                            <h4>Bé gái</h4>
+
+                                            <ul>
+                                                @foreach (loaiSP i in x.GirlCollections)
+                                                {
+                                                    <li><a href="@Url.Action("GirlProductsByCollections","GirlProducts", new { id = i.maLoai})"> @i.loaiHang</a></li>
+                                                }
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="color6" href="@Url.Action("Index","GirlProducts")">BÉ GÁI</a>
+                            <div class="mepanel">
+                                <div class="row">
+                                    <div class="col1">
+                                        <div class="h_nav">
+                                            <h4>Nam</h4>
+                                            <ul>
+                                                @foreach (loaiSP i in x.MenCollections)
+                                                {
+                                                    <li><a href="@Url.Action("MenProductsByCollections","MenProducts", new { id = i.maLoai})"> @i.loaiHang</a></li>
+                                                }
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col1">
+                                        <div class="h_nav">
+                                            <h4>Nữ</h4>
+                                            <ul>
+                                                @foreach (loaiSP i in x.WomenCollections)
+                                                {
+                                                    <li><a href="@Url.Action("WomenProductsByCollections","WomenProducts", new { id = i.maLoai})"> @i.loaiHang</a></li>
+                                                }
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col1">
+                                        <div class="h_nav">
+                                            <h4>Bé trai</h4>
+
+                                            <ul>
+                                                @foreach (loaiSP i in x.BoyCollections)
+                                                {
+                                                    <li><a href="@Url.Action("BoyProductsByCollections","BoyProducts", new { id = i.maLoai})"> @i.loaiHang</a></li>
+
+                                                }
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col1">
+                                        <div class="h_nav">
+                                            <h4>Bé gái</h4>
+
+                                            <ul>
+                                                @foreach (loaiSP i in x.GirlCollections)
+                                                {
+                                                    <li><a href="@Url.Action("GirlProductsByCollections","GirlProducts", new { id = i.maLoai})"> @i.loaiHang</a></li>
+                                                }
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    @RenderBody()
+<div class="footer">
+    <div class="title-hashtag text-center">
+        <h2 class="title">hashtag <a style="text-decoration: none; color: #034ea1; transition: .5s; " href="">bitis</a> ĐỂ CÓ CƠ HỘI XUẤT HIỆN TRÊN WEBSITE CỦA CHÚNG TÔI</h2>
+    </div>
+    <div class="content-bottom">
+        <ul>
+            <li><a href="#"><img class="img-responsive" src="~/Asset/bottom/bottom1.jpg" alt=""></a></li>
+            <li><a href="#"><img class="img-responsive" src="~/Asset/bottom/bottom2.jpg" alt=""></a></li>
+            <li><a href="#"><img class="img-responsive" src="~/Asset/bottom/bottom3.jpg" alt=""></a></li>
+            <li><a href="#"><img class="img-responsive" src="~/Asset/bottom/bottom4.jpg" alt=""></a></li>
+            <li><a href="#"><img class="img-responsive" src="~/Asset/bottom/bottom5.jpg" alt=""></a></li>
+            <li><a href="#"><img class="img-responsive" src="~/Asset/bottom/bottom6.jpg" alt=""></a></li>
+            <div class="clearfix"> </div>
+        </ul>
+    </div>
+
+    <section id="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+                    <div class="block_list">
+                        <h3 class="footer_block_title footer_li">Trợ Giúp</h3>
+                        <ul style="list-style:none">
+                            <li class="footer_li">Trạng thái đơn hàng</li>
+                            <li class="footer_li">Hình thức giao hàng</li>
+                            <li class="footer_li">Hình thức thanh toán</li>
+                            <li class="footer_li">Chính sách đổi trả</li>
+                            <li class="footer_li">Chính sách bảo hành</li>
+                            <li class="footer_li">Chính sách khách hàng thân thiết</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-2">
+                    <div class="block_list">
+                        <h3 class="footer_block_title footer_li">Thông tin</h3>
+                        <ul style="list-style:none">
+                            <li class="footer_li">Tuyển dụng</li>
+                            <li class="footer_li">Hệ thống cửa hàng</li>
+                            <li class="footer_li">Liên hệ hợp tác</li>
+                            <li class="footer_li">Q&A</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <div class="block_list">
+                        <h3 class="footer_block_title footer_li">Về Bitis's</h3>
+                        <ul style="list-style:none">
+                            <li class="footer_li">Về Bitis</li>
+                            <li class="footer_li">Câu chuyện Bitis's</li>
+                            <li class="footer_li">Bước tiến phát triển</li>
+                            <li class="footer_li">Hoạt động</li>
+                            <li class="footer_li">Liên hệ</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="clearfix logo_footer">
+                        <img class="footer_li" src="~/Asset/images/bitis_logo.png" alt="" width="40%">
+                        <p>CÔNG TY TNHH SẢN XUẤT HÀNG TIÊU DÙNG BÌNH TIÊN</p>
+                        <p><b>Địa chỉ:</b> 22 Lý Chiêu Hoàng, Phường 10, Quận 6, TP HCM</p>
+                        <p><b>Sđt:</b>  (028) 38 753 443  </p>
+                        <p class="company_email">
+                            <b>Email : </b>Liên hệ các vấn đề về đặt hàng online : tuvan_online@bitis.com.vn <br> <b>Email : </b>Liên hệ các vấn đề về kênh cửa hàng, đại lý (offline) : chamsockhachhang@bitis.com.vn<br>
+                            <b>Hotline : 19002126 </b>( cước phí: 3000đ/phút )<br>
+                            Thời gian tư vấn: Từ 07h30 đến 12h15, 13h15 đến 21h30 các ngày trong tuần ( Trừ ngày Lễ, Tết)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="footer-top-at">
+            <div class="col-md-4 amet-sed">
+                <ul class="nav-bottom">
+                    <li><a href="#">ĐIỀU KHOẢN</a></li>
+                    <li><a href="#">CHÍNH SÁCH BẢO MẬT</a></li>
+                    <li><a href="#">HƯỚNG DẪN SỬ DỤNG</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 amet-sed ">
+            </div>
+            <div class="col-md-4 amet-sed">
+                <p class="text-center">
+                    Giấy CNĐKDN: 0301340497 được cấp ngày 20/01/1992, được sửa đổi lần thứ 20 ngày 28/12/2015 bởi Sở Kế hoạch và Đầu tư TPHCM
+                </p>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <div class="footer-class">
+        <p>© Copyright Bitis.com.vn. Powered by Haravan Enterprise.</p>
+    </div>
+</div>
+</body>
+</html>

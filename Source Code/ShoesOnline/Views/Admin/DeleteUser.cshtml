@@ -1,0 +1,115 @@
+﻿@model ShoesOnline.Models.taiKhoanTV
+@{
+    ViewBag.Title = "DeleteUser";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Profile</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">User Profile</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <!-- Profile Image -->
+                <div class="card card-primary card-outline">
+                    <div class="card-body box-profile">
+                        <div class="text-center">
+                            <img class="profile-user-img img-fluid img-circle"
+                                 src="~/Asset/Profile/user.png"
+                                 alt="User profile picture">
+                        </div>
+                        <h3 class="profile-username text-center">@Html.DisplayFor(model => model.taiKhoanKH)</h3>
+
+                        <p class="text-muted text-center">Thành viên</p>
+
+                        <ul class="list-group list-group-unbordered mb-3">
+                            <li class="list-group-item">
+                                <b>Giới tính</b> <a class="float-right">@Html.DisplayFor(model => model.gioiTinh)</a>
+                            </li>
+                            <li class="list-group-item">
+                                <b>Ngày sinh</b> <a class="float-right"> @Convert.ToDateTime(Model.ngaySinh).ToString("dd/MM/yyyy")</a>
+                            </li>
+                            <li class="list-group-item">
+                                <b>Quận/Huyện</b> <a class="float-right">@Html.DisplayFor(model => model.quanHuyen.tenQH)</a>
+                            </li>
+                        </ul>
+                        @using (Html.BeginForm())
+                        {
+                            <input type="submit" value="Delete" class="btn btn-primary btn-block">
+                        }
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+                <!-- About Me Box -->
+                
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-header p-2">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item"><a class="nav-link active" href="#settings" data-toggle="tab">Details</a></li>
+                        </ul>
+                    </div><!-- /.card-header -->
+                    <div class="card-body">
+                        <div class="tab-content">
+                            <!-- /.tab-pane -->
+                            <div class=" active tab-pane" id="settings">
+                                <form class="form-horizontal">
+                                    <div class="form-group row">
+                                        <label for="inputName" class="col-sm-2 col-form-label">Name: </label>
+                                        <div class="col-sm-10">
+                                            <p class="form-control">@Html.DisplayFor(model => model.tenTV)</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputEmail" class="col-sm-2 col-form-label">Email: </label>
+                                        <div class="col-sm-10">
+                                            <p class="form-control">@Html.DisplayFor(model => model.email)</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputName2" class="col-sm-2 col-form-label">Phone: </label>
+                                        <div class="col-sm-10">
+                                            <p class="form-control">@Html.DisplayFor(model => model.soDT)</p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- /.tab-pane -->
+                        </div>
+                        <!-- /.tab-content -->
+                    </div><!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </div><!-- /.container-fluid -->
+</section>
+<!-- /.content -->
+<!-- jQuery -->
+<script src="/AdminFE/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="/AdminFE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="/AdminFE/dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="/AdminFE/dist/js/demo.js"></script>

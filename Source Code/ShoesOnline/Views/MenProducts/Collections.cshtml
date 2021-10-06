@@ -1,0 +1,5 @@
+﻿@model IEnumerable<ShoesOnline.Models.loaiSP>
+@foreach (var i in Model)
+{
+    <li><a class="color6" href="@Url.Action("MenProductsByCollections","MenProducts", new { id = i.maLoai})">@i.loaiHang</a></li>
+}
